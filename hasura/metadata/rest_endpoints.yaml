@@ -1,0 +1,27 @@
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: InsertLuckyBag
+  methods:
+    - POST
+  name: InsertLuckyBag
+  url: bag
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: ServiceConfig
+  methods:
+    - GET
+  name: ServiceConfig
+  url: service
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: Services
+  methods:
+    - GET
+  name: Services
+  url: services

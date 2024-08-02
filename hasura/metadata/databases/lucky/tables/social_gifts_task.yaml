@@ -1,0 +1,15 @@
+table:
+  name: task
+  schema: social_gifts
+object_relationships:
+  - name: service
+    using:
+      foreign_key_constraint_on: id_service
+array_relationships:
+  - name: rewards
+    using:
+      foreign_key_constraint_on:
+        column: id_task
+        table:
+          name: reward
+          schema: social_gifts

@@ -1,0 +1,11 @@
+table:
+  name: lucky_bag
+  schema: social_gifts
+array_relationships:
+  - name: accounts
+    using:
+      foreign_key_constraint_on:
+        column: id_bag
+        table:
+          name: account
+          schema: social_gifts

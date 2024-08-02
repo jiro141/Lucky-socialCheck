@@ -1,0 +1,5 @@
+- "!include social_gifts_account.yaml"
+- "!include social_gifts_lucky_bag.yaml"
+- "!include social_gifts_reward.yaml"
+- "!include social_gifts_service.yaml"
+- "!include social_gifts_task.yaml"

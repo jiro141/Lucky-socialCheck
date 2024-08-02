@@ -1,0 +1,10 @@
+table:
+  name: reward
+  schema: social_gifts
+object_relationships:
+  - name: account
+    using:
+      foreign_key_constraint_on: id_account
+  - name: task
+    using:
+      foreign_key_constraint_on: id_task

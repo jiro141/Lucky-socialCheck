@@ -1,0 +1,33 @@
+- name: allowed-queries
+  definition:
+    queries:
+      - name: Services
+        query: |
+          query Services {
+            services: social_gifts_service {
+              name
+              tasks {
+                name
+                metadata
+              }
+            }
+          }
+      - name: InsertLuckyBag
+        query: |
+          mutation InsertLuckyBag ($public_key: String!) {
+            bag: insert_social_gifts_lucky_bag(objects: {public_key:$public_key}) {
+              returning {
+                id
+              }
+            }
+          }
+      - name: ServiceConfig
+        query: |
+          query ServiceConfig ($slug: String!) {
+            service: social_gifts_service(where: {slug:{_eq:$slug}}) {
+              id
+              name
+              config
+              metadata
+            }
+          }

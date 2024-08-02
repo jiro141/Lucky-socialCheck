@@ -1,0 +1,1 @@
+INSERT INTO "social_gifts"."task"("amount", "id", "id_service", "position", "metadata", "description", "mint", "name", "created_at", "updated_at") VALUES (10000, 2, 2, 2, '{}', E'prueba', E'prueba', E'prueba', E'2024-08-02T22:12:25.036677+00:00', E'2024-08-02T22:12:25.036677+00:00');

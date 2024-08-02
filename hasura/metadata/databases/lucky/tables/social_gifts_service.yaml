@@ -1,0 +1,18 @@
+table:
+  name: service
+  schema: social_gifts
+array_relationships:
+  - name: accounts
+    using:
+      foreign_key_constraint_on:
+        column: id_service
+        table:
+          name: account
+          schema: social_gifts
+  - name: tasks
+    using:
+      foreign_key_constraint_on:
+        column: id_service
+        table:
+          name: task
+          schema: social_gifts
